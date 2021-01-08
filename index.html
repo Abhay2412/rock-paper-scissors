@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <h1 id="title">Rock Paper Scissors</h1>
+    <h2 id="sub-title">Created By: Abhay Khosla</h2>
+
+    <div id="scores">
+        <div>
+            <p>Player</p>
+            <p id="playerScore">0</p>
+        </div>
+        <div>
+            <p>Computer</p>
+            <p id="computerScore">0</p>
+        </div>
+    </div>
+
+    <div id="buttons">
+        <div onclick="playRound('rock')">
+            <i class="fa fa-hand-rock-o"></i>
+        </div>
+        <div onclick="playRound('paper')">
+            <i class="fa fa-hand-paper-o"></i>
+        </div>
+        <div onclick="playRound('scissors')">
+            <i class="fa fa-hand-scissors-o"></i>
+        </div>
+    </div>
+
+    <p id="text">
+       To play just click on one of the buttons wheter it be Rock, Paper, Scissors. First to 5 points wins good luck.
+    </p>
+
+    <div id="gameover-screen" class="hidden">
+        <div>
+            <h1 id="winner-text">Game Over</h1>
+            <button id="resetButton" onclick="reset()">Play again</button>
+        </div>
+    </div>
+    
+</body>
+</html>
